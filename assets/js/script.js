@@ -215,6 +215,7 @@ function changeQuestions(event) {
     } else {
         userScoreEl.textContent = userScore + " / " + 10 + " points";
         if (userScore <= 2) {
+<<<<<<< HEAD
             userScoreMsgEl.textContent = ". Really?";
         } 
         else if (userScore > 2 && userScore <= 4) {
@@ -225,6 +226,17 @@ function changeQuestions(event) {
         } 
         else {
             userScoreMsgEl.textContent = ". Wow, impressive!";
+=======
+            userScoreMsgEl.textContent = "... Really?";
+        } else if (userScore > 2 && userScore <= 3) {
+            userScoreMsgEl.textContent = "... You can do better.";
+        } else if (userScore > 3 && userScore <= 5) {
+            userScoreMsgEl.textContent = ", not bad, but not great either.";
+        } else if (userScore > 5 && userScore <= 7) {
+            userScoreMsgEl.textContent = ", good job!";
+        } else {
+            userScoreMsgEl.textContent = "... Wow, impressive!";
+>>>>>>> 8932e5bc5e0210a0c7e42f2284a6445c66e020ba
         }
 
         questionsDiv.setAttribute("class", "hide");
@@ -311,7 +323,7 @@ submitBtn.addEventListener("click", function(event) {
     };
     
     if (user.userName === "") {
-        inputMessageEl.textContent = "You can't submit your score without your initials";
+        inputMessageEl.textContent = "You can't submit your score without your name";
         return;
     } 
   
@@ -342,7 +354,7 @@ clearBtn.addEventListener("click", function() {
     if (userScores.length < 1) {
         alert("There are no existing scores to clear.");
     } else {
-        var confirmClear = confirm("Are you sure you want to clear the highscore list?");
+        var confirmClear = confirm("Are you sure you want to clear the scoreboard?");
         if (confirmClear) {
             localStorage.clear();
             highscoreList.textContent = "";
