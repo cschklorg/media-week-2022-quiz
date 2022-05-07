@@ -223,6 +223,7 @@ function changeQuestions(event) {
         } else if (userScore > 3 && userScore <= 5) {
             userScoreMsgEl.textContent = ", not bad, but not great either.";
         } else if (userScore > 5 && userScore <= 7) {
+            userScoreMsgEl.textContent = ", good job!";
         } else {
             userScoreMsgEl.textContent = "... Wow, impressive!";
         }
@@ -311,7 +312,7 @@ submitBtn.addEventListener("click", function(event) {
     };
     
     if (user.userName === "") {
-        inputMessageEl.textContent = "You can't submit your score without your initials";
+        inputMessageEl.textContent = "You can't submit your score without your name";
         return;
     } 
   
@@ -342,7 +343,7 @@ clearBtn.addEventListener("click", function() {
     if (userScores.length < 1) {
         alert("There are no existing scores to clear.");
     } else {
-        var confirmClear = confirm("Are you sure you want to clear the highscore list?");
+        var confirmClear = confirm("Are you sure you want to clear the scoreboard?");
         if (confirmClear) {
             localStorage.clear();
             highscoreList.textContent = "";
