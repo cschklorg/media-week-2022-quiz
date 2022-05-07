@@ -28,7 +28,7 @@ var questionArr = [
     },
     {
         // questionNumber: "Math-4",
-        question: "电脑没有RAM会对电脑有什么影响？",
+        question: "电脑没有RAM会对电脑造成什么影响？",
         firstOption: "没有影响",
         secondOption: "电脑无法运行",
         thirdOption: "电脑无法储存资料",
@@ -89,4 +89,22 @@ var questionArr = [
         fourthOption: "询问家人朋友",
         correctAnswer: "#fourth-option"
     },
+    {
+        // questionNumber: "Math-11",
+        question: "请筹委加题目，数量要多少呢？",
+        firstOption: "1",
+        secondOption: "2",
+        thirdOption: "3",
+        fourthOption: "4",
+        correctAnswer: "#second-option"
+    },
+    {
+        // questionNumber: "Math-12",
+        question: "加题目!!!!!!!",
+        firstOption: "666",
+        secondOption: "777",
+        thirdOption: "888",
+        fourthOption: "999",
+        correctAnswer: "#second-option"
+    }
 ]

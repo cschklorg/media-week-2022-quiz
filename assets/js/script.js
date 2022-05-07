@@ -33,7 +33,7 @@ var submitBtn = document.querySelector("#submit-highscore");
 var returnBtn = document.querySelector("#go-to-start");
 
 // global variables for use in functions
-var questionCounter = 8;
+var questionCounter = 10;
 var questionNumber = 1;
 var questionBin = [];
 var userScore = 0;
@@ -50,15 +50,13 @@ function countdown() {
             countdownEl.innerHTML = 0;
             completeMsg.textContent = "Sorry, time's up!"
 
-            userScoreEl.textContent = userScore + " out of " + 8 + " points";
+            userScoreEl.textContent = userScore + " out of " + 10 + " points";
             if (userScore <= 2) {
                 userScoreMsgEl.textContent = "... Really?";
-            } else if (userScore > 2 && userScore <= 3) {
+            } else if (userScore > 2 && userScore <= 4) {
                 userScoreMsgEl.textContent = "... You can do better.";
-            } else if (userScore > 3 && userScore <= 5) {
-                userScoreMsgEl.textContent = ", not bad, but not great either.";
             } else if (userScore > 5 && userScore <= 7) {
-                userScoreMsgEl.textContent = ", good job!";
+                userScoreMsgEl.textContent = ", not bad, but not great either.";
             } else {
                 userScoreMsgEl.textContent = "... Wow, impressive!";
             }
@@ -67,7 +65,7 @@ function countdown() {
             completeDiv.setAttribute("class", "show");
             
             questionBin = [];
-            questionCounter = 8;
+            questionCounter = 10;
             questionNumber = 1;
             timeLeft = 120;
         } else if (completeDiv.className === "show") {
@@ -124,7 +122,7 @@ var currentQuestion = questionArr[currentIndex];
 // check that the current index number hasn't already been used
 function checkBin() {
     for (var i = 0; i < 1; i++) {
-        if (questionBin.includes(currentIndex) && questionBin.length < 9) {
+        if (questionBin.includes(currentIndex) && questionBin.length < 11) {
             currentIndex = Math.floor(Math.random() * questionArr.length);
             i--;
         } 
@@ -215,23 +213,25 @@ function changeQuestions(event) {
         fourthBtn.textContent = currentQuestion.fourthOption;
                 
     } else {
-        userScoreEl.textContent = userScore + " out of " + 8 + " points";
+        userScoreEl.textContent = userScore + " / " + 10 + " points";
         if (userScore <= 2) {
-            userScoreMsgEl.textContent = "... Really?";
-        } else if (userScore > 2 && userScore <= 3) {
-            userScoreMsgEl.textContent = "... You can do better.";
-        } else if (userScore > 3 && userScore <= 5) {
-            userScoreMsgEl.textContent = ", not bad, but not great either.";
-        } else if (userScore > 5 && userScore <= 7) {
-        } else {
-            userScoreMsgEl.textContent = "... Wow, impressive!";
+            userScoreMsgEl.textContent = ". Really?";
+        } 
+        else if (userScore > 2 && userScore <= 4) {
+            userScoreMsgEl.textContent = ". You can do better.";
+        } 
+        else if (userScore > 4 && userScore <= 6) {
+            userScoreMsgEl.textContent = ". Not bad, but not great either.";
+        } 
+        else {
+            userScoreMsgEl.textContent = ". Wow, impressive!";
         }
 
         questionsDiv.setAttribute("class", "hide");
         completeDiv.setAttribute("class", "show");
 
         questionBin = [];
-        questionCounter = 8;
+        questionCounter = 10;
         questionNumber = 1;
         timeLeft = 120;
 

@@ -7,38 +7,53 @@
     <title>精彩Quiz題</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;500&family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
     <div id="top-container">
         <div><a href="#" id="view-highscores" class="">View Highscores</a></div>
         <div id="countdown-div">Time: <span id="countdown">120</span></div>
     </div>
+
     <div id="main-container">
+
         <div id="start">
             <h2>精彩Quiz題</h2>
             <p>
-                Test your knowledge on a variety of topics!<br><br>Try to answer all <strong>8 questions within 2 minutes</strong>.<br>Try not to spend too much time on each question.
+                Test your knowledge on a variety of topics!<br><br>Try to answer all <strong>10 questions within 2 minutes</strong>.<br>Try not to spend too much time on each question.
             </p>
-            <div id="start-btn-div"><button id="start-quiz">Start Quiz</button></div>
+            <br><br>
+            <div id="start-btn-div"><button id="start-quiz">Start</button></div>
         </div>
+
         <div id="questions" class="hide">
-            <h4><span id="question-number"></span>. <span id="question"></span></h4>
+            <h3><span id="question-number"></span>. <span id="question"></span></h3>
+            <br>
             <div id="answer-buttons" class="">
                 <button id="first-option" class=""></button>
                 <button id="second-option" class=""></button>
                 <button id="third-option" class=""></button>
                 <button id="fourth-option" class=""></button>
             </div>
+            <br><br><br><br><br>
             <div id="next-div" class="hide">
                 <button id="next-question">Next</button>
             </div>
         </div>
+
         <div id="complete" class="hide">
-            <h3 id="complete-msg">You answered all the questions within the time limit.</h3>
-            <p id="complete-p">You scored <span id="user-score">0</span><span id="user-score-msg"></span></p>
+            <!-- <h3 id="complete-msg">You answered all the questions within the time limit.</h3> -->
+            <p id="complete-p">You scored  <span id="user-score">0</span><span id="user-score-msg"></span></p>
+            <br><br>
             <h4>Save your score</h4>
             <div id="highscore-input-div">
                 <input type="text" id="highscore-input" placeholder="Enter your initials"><button id="submit-highscore">Submit</button>
@@ -48,6 +63,7 @@
             <br>
             <button id="retake">Retake Quiz</button>   
         </div>
+
         <div id="highscores" class="hide">
             <h2>Highscore List</h2>
             <ol id="highscore-list"></ol>
@@ -56,8 +72,11 @@
                 <button id="clear-highscores">Clear highscores</button>
             </div>
         </div>
+
     </div>
+
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 </html>
