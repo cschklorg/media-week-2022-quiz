@@ -30,6 +30,3 @@ This is a multiple-choice quiz web application designed purely for entertainment
 ### Highscore list
 ![Quiz highscore list screenshot](assets/images/highscores-screenshot.png)
 
-## Link
-
-[Link to deployed application](https://jkaho.github.io/quiz-website/)
