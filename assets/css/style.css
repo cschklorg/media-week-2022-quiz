@@ -5,7 +5,6 @@
 }
 
 /* GENERAL */
-
 .hide {
     display: none;
 }
@@ -16,11 +15,20 @@
 
 h2 {
     font-family: 'JetBrains Mono', monospace;
+    font-size: 63px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
     text-align: center;
 }
 
 p {
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
 }
 
 button, input {
@@ -31,6 +39,16 @@ button {
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* TOP CONTAINER */
 
 #top-container {
@@ -40,6 +58,7 @@ button {
 
 #view-highscores {
     color: black;
+    font-size: 22px;
     text-decoration: none;
 }
 
@@ -54,6 +73,11 @@ button {
 
 #countdown-div {
     float: right;
+    font-size: 22px;
+}
+
+#countdown {
+    font-size: 22px;
 }
 
 #questions, #complete, #highscores {
@@ -67,6 +91,17 @@ button {
     margin: 100px auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* start div */
 #start-btn-div {
     text-align: center;
@@ -79,11 +114,12 @@ button {
 
 #start-btn-div button {
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 55px;
     font-weight: bold;
     background: transparent;
-    border: 3px solid rgb(242, 181, 28);
-    height: 40px;
-    width: 150px;
+    border: 7px solid rgb(242, 181, 28);
+    height: 100px;
+    width: 260px;
 }
 
 #start-btn-div button:hover {
@@ -92,21 +128,38 @@ button {
     transition-duration: 0.3s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* questions div */
+#questions {
+    width: 60%;
+    font-size: 30px;
+}
+
 #questions h4 {
     font-family: 'Nunito Sans', sans-serif;
-    padding: 20px 0;
+    padding: 20px ;
 }
 
 #answer-buttons button {
     display: block;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 28px;
     background: rgb(254, 224, 149);
     border: none;
-    height: 30px;
+    height: 60px;
     width: 90%;
-    margin: 5px auto;
+    margin: 7px auto;
 }
 
 #answer-buttons button:hover {
@@ -122,10 +175,14 @@ button {
 #next-question {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
+    font-size: 58px;
     background: transparent;
-    border: 2px solid rgb(0, 0, 0);
-    height: 35px;
+    border: 5px solid rgb(0, 0, 0);
+    height: 30%;
     width: 90%;
+    position: relative;
+    left: auto;
+    bottom: 20%;
 }
 
 #next-question:hover {
@@ -133,6 +190,17 @@ button {
     background: rgb(0, 0, 0);
     transition-duration: 0.3s;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* complete div */
 #complete-msg {
@@ -201,13 +269,26 @@ input:focus {
     transition-duration: 0.3s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* highscores div */
 ol {
     padding: 40px 0 20px 0;
+    font-size: 20px;
 }
 
 li {
     font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
     background: rgb(255, 245, 211); 
     padding: 5px;
     margin: 5px;
@@ -222,9 +303,10 @@ li {
 #go-to-start, #clear-highscores {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
+    font-size: 18px;
     background: transparent;
-    border: 2px solid rgb(242, 181, 28);
-    height: 40px;
+    border: 3px solid rgb(242, 181, 28);
+    height: 45px;
     width: 200px;
     margin: 0 20px;
 }
@@ -245,8 +327,18 @@ li {
     transition-duration: 0.3s;
 }
 
-/*  MEDIA QUERIES */
 
+
+
+
+
+
+
+
+
+
+
+/*  MEDIA QUERIES */
 /* small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) { 
     #main-container {
