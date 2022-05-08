@@ -151,7 +151,7 @@ function scoreIncrement(event) {
             var correctBtn = document.querySelector(startQuestion.correctAnswer);
             correctBtn.setAttribute("style", "border: 2px solid rgb(116, 222, 116)");
 
-            countdownEl.setAttribute("style", "color: rgb(218, 72, 72)"); 
+            countdownEl.setAttribute("style", "color: rgb(0, 0, 0)"); 
             setTimeout(function() {
                 countdownEl.removeAttribute("style");
             }, 1000)
@@ -166,7 +166,7 @@ function scoreIncrement(event) {
             var correctBtn = document.querySelector(currentQuestion.correctAnswer);
             correctBtn.setAttribute("style", "border: 2px solid rgb(116, 222, 116)");
 
-            countdownEl.setAttribute("style", "color: rgb(218, 72, 72)"); 
+            countdownEl.setAttribute("style", "color: rgb(0, 0, 0)"); 
             setTimeout(function() {
                 countdownEl.removeAttribute("style");
             }, 1000)
