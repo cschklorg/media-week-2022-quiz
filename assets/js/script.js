@@ -33,7 +33,7 @@ var submitBtn = document.querySelector("#submit-highscore");
 var returnBtn = document.querySelector("#go-to-start");
 
 // global variables for use in functions
-var questionCounter = 8;
+var questionCounter = 10;
 var questionNumber = 1;
 var questionBin = [];
 var userScore = 0;
@@ -50,7 +50,7 @@ function countdown() {
             countdownEl.innerHTML = 0;
             completeMsg.textContent = "Sorry, time's up!"
 
-            userScoreEl.textContent = userScore + " out of " + 8 + " points";
+            userScoreEl.textContent = userScore + " out of " + 10 + " points";
             if (userScore <= 2) {
                 userScoreMsgEl.textContent = "... Really?";
             } else if (userScore > 2 && userScore <= 3) {
@@ -67,7 +67,7 @@ function countdown() {
             completeDiv.setAttribute("class", "show");
             
             questionBin = [];
-            questionCounter = 8;
+            questionCounter = 10;
             questionNumber = 1;
             timeLeft = 30;
         } else if (completeDiv.className === "show") {
@@ -124,7 +124,7 @@ var currentQuestion = questionArr[currentIndex];
 // check that the current index number hasn't already been used
 function checkBin() {
     for (var i = 0; i < 1; i++) {
-        if (questionBin.includes(currentIndex) && questionBin.length < 9) {
+        if (questionBin.includes(currentIndex) && questionBin.length < 11) {
             currentIndex = Math.floor(Math.random() * questionArr.length);
             i--;
         } 
@@ -215,7 +215,7 @@ function changeQuestions(event) {
         fourthBtn.textContent = currentQuestion.fourthOption;
                 
     } else {
-        userScoreEl.textContent = userScore + " out of " + 8 + " points";
+        userScoreEl.textContent = userScore + " out of " + 10 + " points";
         if (userScore <= 2) {
             userScoreMsgEl.textContent = "... Really?";
         } else if (userScore > 2 && userScore <= 3) {
@@ -231,7 +231,7 @@ function changeQuestions(event) {
         completeDiv.setAttribute("class", "show");
 
         questionBin = [];
-        questionCounter = 8;
+        questionCounter = 10;
         questionNumber = 1;
         timeLeft = 30;
 
@@ -311,7 +311,7 @@ submitBtn.addEventListener("click", function(event) {
     };
     
     if (user.userName === "") {
-        inputMessageEl.textContent = "You can't submit your score without your initials";
+        inputMessageEl.textContent = "You can't submit your score without your name";
         return;
     } 
   
@@ -342,7 +342,7 @@ clearBtn.addEventListener("click", function() {
     if (userScores.length < 1) {
         alert("There are no existing scores to clear.");
     } else {
-        var confirmClear = confirm("Are you sure you want to clear the highscore list?");
+        var confirmClear = confirm("Are you sure you want to clear the scoreboard?");
         if (confirmClear) {
             localStorage.clear();
             highscoreList.textContent = "";
