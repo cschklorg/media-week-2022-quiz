@@ -37,7 +37,7 @@ var questionCounter = 8;
 var questionNumber = 1;
 var questionBin = [];
 var userScore = 0;
-var timeLeft = 120;
+var timeLeft = 30;
 
 // countdown element 
 var countdownEl = document.querySelector("#countdown");
@@ -69,7 +69,7 @@ function countdown() {
             questionBin = [];
             questionCounter = 8;
             questionNumber = 1;
-            timeLeft = 120;
+            timeLeft = 30;
         } else if (completeDiv.className === "show") {
             clearInterval(timerVar);
         } else {
@@ -233,7 +233,7 @@ function changeQuestions(event) {
         questionBin = [];
         questionCounter = 8;
         questionNumber = 1;
-        timeLeft = 120;
+        timeLeft = 30;
 
         return;
     }
@@ -293,8 +293,8 @@ highscoreLink.addEventListener("click", function() {
 retakeBtn.addEventListener("click", function() {
     questionArrIndex = 0;
     userScore = 0;
-    timeLeft = 120; 
-    countdownEl.innerHTML = 120;
+    timeLeft = 30; 
+    countdownEl.innerHTML = 30;
     inputMessageEl.textContent = "";
 
     startDiv.setAttribute("class", "show");
@@ -329,7 +329,7 @@ submitBtn.addEventListener("click", function(event) {
 returnBtn.addEventListener("click", function() {
     questionArrIndex = 0;
     userScore = 0;
-    countdownEl.innerHTML = 120;
+    countdownEl.innerHTML = 30;
     inputMessageEl.textContent = "";
     
     highscoresDiv.setAttribute("class", "hide");
