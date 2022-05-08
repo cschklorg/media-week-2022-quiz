@@ -5,6 +5,7 @@
 }
 
 /* GENERAL */
+
 .hide {
     display: none;
 }
@@ -14,6 +15,7 @@
 }
 
 h2 {
+<<<<<<< HEAD
     font-family: 'Lexend Deca', sans-serief;
     font-size: 63px;
     text-align: center;
@@ -23,12 +25,19 @@ h3 {
     font-family: 'Noto Sans SC', sans-serif;
     font-weight: lighter;
     font-size: 40px;
+=======
+    font-family: 'JetBrains Mono', monospace;
+>>>>>>> parent of 237ae27 (Changes were made)
     text-align: center;
 }
 
 p {
+<<<<<<< HEAD
     font-family: 'Lexend Deca', sans-serif;
     font-size: 35px;
+=======
+    font-family: 'Nunito Sans', sans-serif;
+>>>>>>> parent of 237ae27 (Changes were made)
 }
 
 button, input {
@@ -39,16 +48,6 @@ button {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* TOP CONTAINER */
 
 #top-container {
@@ -58,7 +57,6 @@ button {
 
 #view-highscores {
     color: black;
-    font-size: 22px;
     text-decoration: none;
 }
 
@@ -73,11 +71,6 @@ button {
 
 #countdown-div {
     float: right;
-    font-size: 22px;
-}
-
-#countdown {
-    font-size: 22px;
 }
 
 #questions, #complete, #highscores {
@@ -91,17 +84,6 @@ button {
     margin: 100px auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* start div */
 #start-btn-div {
     text-align: center;
@@ -113,13 +95,17 @@ button {
 }
 
 #start-btn-div button {
+<<<<<<< HEAD
     font-family: 'Lexend Deca', sans-serif;
     font-size: 55px;
+=======
+    font-family: 'Nunito Sans', sans-serif;
+>>>>>>> parent of 237ae27 (Changes were made)
     font-weight: bold;
     background: transparent;
-    border: 7px solid rgb(242, 181, 28);
-    height: 100px;
-    width: 260px;
+    border: 3px solid rgb(242, 181, 28);
+    height: 40px;
+    width: 150px;
 }
 
 #start-btn-div button:hover {
@@ -128,38 +114,32 @@ button {
     transition-duration: 0.3s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* questions div */
-#questions {
-    width: 60%;
-    font-size: 30px;
-}
-
 #questions h4 {
+<<<<<<< HEAD
     font-family: 'Lexend Deca', sans-serif;
     padding: 20px ;
+=======
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 20px 0;
+>>>>>>> parent of 237ae27 (Changes were made)
 }
 
 #answer-buttons button {
     display: block;
+<<<<<<< HEAD
     font-family: 'Lexend Deca', sans-serif;
     font-weight: normal;
     font-size: 28px;
+=======
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+>>>>>>> parent of 237ae27 (Changes were made)
     background: rgb(254, 224, 149);
     border: none;
-    height: 60px;
+    height: 30px;
     width: 90%;
-    margin: 7px auto;
+    margin: 5px auto;
 }
 
 #answer-buttons button:hover {
@@ -175,14 +155,10 @@ button {
 #next-question {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: bold;
-    font-size: 58px;
     background: transparent;
-    border: 5px solid rgb(0, 0, 0);
-    height: 30%;
+    border: 2px solid rgb(0, 0, 0);
+    height: 35px;
     width: 90%;
-    position: relative;
-    left: auto;
-    bottom: 20%;
 }
 
 #next-question:hover {
@@ -190,17 +166,6 @@ button {
     background: rgb(0, 0, 0);
     transition-duration: 0.3s;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* complete div */
 #complete-msg h3{
@@ -275,26 +240,18 @@ input:focus {
     transition-duration: 0.3s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* highscores div */
 ol {
     padding: 40px 0 20px 0;
-    font-size: 20px;
 }
 
 li {
+<<<<<<< HEAD
     font-family: 'Lexend Deca', sans-serief;
     font-size: 20px;
+=======
+    font-family: 'JetBrains Mono', monospace;
+>>>>>>> parent of 237ae27 (Changes were made)
     background: rgb(255, 245, 211); 
     padding: 5px;
     margin: 5px;
@@ -309,10 +266,9 @@ li {
 #go-to-start, #clear-highscores {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
-    font-size: 18px;
     background: transparent;
-    border: 3px solid rgb(242, 181, 28);
-    height: 45px;
+    border: 2px solid rgb(242, 181, 28);
+    height: 40px;
     width: 200px;
     margin: 0 20px;
 }
@@ -333,18 +289,8 @@ li {
     transition-duration: 0.3s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*  MEDIA QUERIES */
+
 /* small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) { 
     #main-container {
