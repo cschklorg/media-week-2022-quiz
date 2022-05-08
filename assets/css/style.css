@@ -1,0 +1,359 @@
+/* GLOBAL RESET */
+
+* {
+    margin: 0;
+}
+
+/* GENERAL */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 35px;
+}
+
+button, input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TOP CONTAINER */
+
+#top-container {
+    background: rgb(242, 181, 28); 
+    padding: 30px;
+}
+
+#view-highscores {
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+#view-highscores:hover {
+    color: white;
+}
+
+#top-container div {
+    display: inline-block;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#countdown-div {
+    float: right;
+    font-size: 22px;
+}
+
+#countdown {
+    font-size: 22px;
+}
+
+#questions, #complete, #highscores {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* MAIN CONTAINER */
+
+#main-container {
+    margin: 100px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* start div */
+#start-btn-div {
+    text-align: center;
+}
+
+#start p {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#start-btn-div button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    background: transparent;
+    border: 6px solid rgb(242, 181, 28);
+    height: 100px;
+    width: 260px;
+}
+
+#start-btn-div button:hover {
+    color: white;
+    background: rgb(242, 181, 28);
+    transition-duration: 0.3s;
+}
+
+/* questions div */
+#questions {
+    width: 60%;
+    font-size: 30px;
+}
+#questions h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 20px ;
+}
+
+#answer-buttons button {
+    display: block;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    background: rgb(254, 224, 149);
+    border: none;
+    height: 60px;
+    width: 90%;
+    margin: 7px auto;
+}
+
+#answer-buttons button:hover {
+    color: white;
+    background: rgb(242, 181, 28);
+    transition-duration: 0.3s;
+}
+
+#next-div {
+    text-align: center;
+}
+
+#next-question {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 58px;
+    background: transparent;
+    border: 6px solid rgb(0, 0, 0);
+    height: 30%;
+    width: 90%;
+    position: relative;
+    left: auto;
+    bottom: 20%;
+}
+
+#next-question:hover {
+    color: white;
+    background: rgb(0, 0, 0);
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* complete div */
+#complete {
+    width: 65%;
+    text-align: center;
+}
+#complete-msg {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 40px;
+}
+
+#complete-p {
+    padding: 30px ;
+    font-size: 40px;
+}
+
+#complete h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+#highscore-input-div {
+    margin-top: 25px;
+}
+
+input {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 23px;
+    background: rgb(255, 245, 211);
+    height: 40px;
+    border: none;
+    border-radius: 0;
+}
+
+input:focus {
+    background: rgb(255, 219, 130);
+}
+
+#submit-highscore {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    background: rgb(242, 181, 28);
+    border: none;
+    height: 45px;
+    width: 100px;
+}
+
+#submit-highscore:hover {
+    color: white;
+    background: rgb(0, 0, 0);
+    transition-duration: 0.3s;
+}
+
+#input-message {
+    font-style: italic;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+#retake {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    background: transparent;
+    border: 3px solid rgb(242, 181, 28);
+    height: 50px;
+    width: 230px;
+    margin-right: 0px;;
+}
+
+#retake:hover {
+    color: white;
+    background: rgb(242, 181, 28);
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* highscores div */
+ol {
+    padding: 40px 0 20px 0;
+    font-size: 20px;
+}
+
+li {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    background: rgb(255, 245, 211); 
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    line-height: 2em;
+}
+
+#highscore-list-buttons {
+    text-align: center;
+}
+
+#go-to-start, #clear-highscores {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    border: 3px solid rgb(242, 181, 28);
+    height: 45px;
+    width: 200px;
+    margin: 0 20px;
+}
+
+#clear-highscores {
+    border: 2px solid rgb(181, 52, 52);
+}
+
+#go-to-start:hover {
+    color: white;
+    background: rgb(242, 181, 28);
+    transition-duration: 0.3s;
+}
+
+#clear-highscores:hover {
+    color: white;
+    background: rgb(181, 52, 52);
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MEDIA QUERIES */
+/* small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) { 
+    #main-container {
+        padding: 0 20px;
+    }
+
+    #questions, #complete, #highscores {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* large devices (desktops, 992px and down) */
+@media (max-width: 992px) { 
+    #go-to-start, #clear-highscores {
+        width: 80%;
+        margin: 5px auto;
+    }
+}
