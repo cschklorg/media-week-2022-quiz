@@ -14,7 +14,7 @@
 }
 
 h2 {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Lexend Deca', sans-serief;
     font-size: 63px;
     text-align: center;
 }
@@ -27,7 +27,7 @@ h3 {
 }
 
 p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 35px;
 }
 
@@ -68,7 +68,7 @@ button {
 
 #top-container div {
     display: inline-block;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Lexend Deca', sans-serief;
 }
 
 #countdown-div {
@@ -113,7 +113,7 @@ button {
 }
 
 #start-btn-div button {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 55px;
     font-weight: bold;
     background: transparent;
@@ -146,13 +146,13 @@ button {
 }
 
 #questions h4 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     padding: 20px ;
 }
 
 #answer-buttons button {
     display: block;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: normal;
     font-size: 28px;
     background: rgb(254, 224, 149);
@@ -173,7 +173,7 @@ button {
 }
 
 #next-question {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: bold;
     font-size: 58px;
     background: transparent;
@@ -204,18 +204,18 @@ button {
 
 /* complete div */
 #complete-msg h3{
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Lexend Deca', sans-serief;
     font-size: 35px;
 }
 
 #complete-p {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Lexend Deca', sans-serief;
     padding: 30px;
     font-size: 40px;
 }
 
 #complete h4 {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Lexend Deca', sans-serief;
     font-size: 35px;
     font-weight: normal;
 }
@@ -225,7 +225,7 @@ button {
 }
 
 input {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     background: rgb(255, 245, 211);
     height: 38px;
     border: none;
@@ -237,7 +237,7 @@ input:focus {
 }
 
 #submit-highscore {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: bold;
     font-size: 14px;
     background: rgb(242, 181, 28);
@@ -259,7 +259,7 @@ input:focus {
 }
 
 #retake {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: bold;
     font-size: 14px;
     background: transparent;
@@ -293,7 +293,7 @@ ol {
 }
 
 li {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Lexend Deca', sans-serief;
     font-size: 20px;
     background: rgb(255, 245, 211); 
     padding: 5px;
