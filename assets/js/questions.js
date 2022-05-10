@@ -91,20 +91,46 @@ var questionArr = [
     },
     {
         // questionNumber: "11",
-        question: "加题目！！！",
-        firstOption: "666",
-        secondOption: "777",
-        thirdOption: "888",
-        fourthOption: "999",
+        question: "以下哪项不是艾伦图灵的誉称:
+",
+        firstOption: "计算机之父",
+        secondOption: "人工智能之父",
+        thirdOption: "电脑之父",
+        fourthOption: "编程之父",
         correctAnswer: "#fourth-option"
     },
     {
-        // questionNumber: "11",
-        question: "请帮忙加题目！！！",
-        firstOption: "1",
-        secondOption: "2",
-        thirdOption: "3",
-        fourthOption: "4",
+        // questionNumber: "12",
+        question: "以下哪项不是电子产品的品牌:",
+        firstOption: "Apple",
+        secondOption: "Amd",
+        thirdOption: "Nvidia",
+        fourthOption: "ClaryTech",
         correctAnswer: "#fourth-option"
+    }
+    {
+        // questionNumber: "13",
+        question: "PCI-E和SATA哪个的速度比较快?",
+        firstOption: "PCI-E",
+        secondOption: "SATA",
+        correctAnswer: "#first-option"
+    }
+    {
+        // questionNumber: "14",
+        question: "Windows XP的发行日是几时? ",
+        firstOption: "2001/10/25",
+        secondOption: "2002/10/25",
+        thirdOption: "2001/11/25",
+        fourthOption: "2002/11/25",
+        correctAnswer: "#first-option"
+    }
+{
+        // questionNumber: "15",
+        question: "第一台现代意义上的可以商用的移动电话在哪一年诞生? :",
+        firstOption: "1989",
+        secondOption: "1987",
+        thirdOption: "1985",
+        fourthOption: "1983",
+        correctAnswer: "#third-option"
     }
 ]
