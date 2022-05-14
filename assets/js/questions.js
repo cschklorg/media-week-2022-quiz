@@ -104,6 +104,7 @@ var questionArr = [
         firstOption: "PCIe",
         secondOption: "SATA",
         thirdOption: "都一样快",
+        fourthOption: "-",
         correctAnswer: "#first-option"
     },
     {
