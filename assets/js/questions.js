@@ -111,7 +111,7 @@ var questionArr = [
         // questionNumber: "13",
         question: "以下哪项不是电子产品的品牌？",
         firstOption: "Apple",
-        secondOption: "Amd",
+        secondOption: "AMD",
         thirdOption: "Nvidia",
         fourthOption: "ClaryTech",
         correctAnswer: "#fourth-option"
