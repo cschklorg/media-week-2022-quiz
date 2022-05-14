@@ -37,12 +37,12 @@ var questionArr = [
     },
     {
         // questionNumber: "5",
-        question: "Intel最主要生产的产品是什么？",
-        firstOption: "电脑",
-        secondOption: "显卡",
-        thirdOption: "微处理器",
-        fourthOption: "中央计算器",
-        correctAnswer: "#third-option"
+        question: "第一个微处理器是由什么公司是生产？",
+        firstOption: "Intel",
+        secondOption: "AMD",
+        thirdOption: "Apple",
+        fourthOption: "Nvidia",
+        correctAnswer: "#first-option"
     },
     {
         // questionNumber: "6",
@@ -73,7 +73,7 @@ var questionArr = [
     },
     {
         // questionNumber: "9",
-        question: "以下哪个是只能在手机使用的影片剪辑软件？",
+        question: "以下哪个是只能在手机正式使用的影片剪辑软件？",
         firstOption: "Kinemaster",
         secondOption: "剪映",
         thirdOption: "Premiere Pro",
@@ -91,7 +91,7 @@ var questionArr = [
     },
     {
         // questionNumber: "11",
-        question: "以下哪项不是艾伦图灵的誉称？",
+        question: "以下哪项不是艾伦·图灵的誉称？",
         firstOption: "计算机之父",
         secondOption: "人工智能之父",
         thirdOption: "电脑之父",
@@ -100,21 +100,21 @@ var questionArr = [
     },
     {
         // questionNumber: "12",
+        question: "PCIe和SATA哪个的带宽速度比较快?",
+        firstOption: "PCIe",
+        secondOption: "SATA",
+        thirdOption: "都一样快",
+        fourthOption: "-",
+        correctAnswer: "#first-option"
+    },
+    {
+        // questionNumber: "13",
         question: "以下哪项不是电子产品的品牌？",
         firstOption: "Apple",
         secondOption: "Amd",
         thirdOption: "Nvidia",
         fourthOption: "ClaryTech",
         correctAnswer: "#fourth-option"
-    },
-    {
-        // questionNumber: "13",
-        question: "PCIe和SATA哪个的带宽速度比较快?",
-        firstOption: "PCIe",
-        secondOption: "SATA",
-        thirdOption: "都一样快",
-        fourthOption: "不知道🙉",
-        correctAnswer: "#first-option"
     },
     {
         // questionNumber: "14",
@@ -128,7 +128,7 @@ var questionArr = [
     {
         // questionNumber: "15",
         question: "第一台现代意义上的可以商用的移动电话在哪一年诞生？",
-        firstOption: "1989",
+        firstOption: "1998",
         secondOption: "1987",
         thirdOption: "1985",
         fourthOption: "1983",
