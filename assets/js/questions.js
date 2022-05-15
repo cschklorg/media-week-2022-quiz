@@ -92,7 +92,7 @@ var questionArr = [
     {
         // questionNumber: "11",
         question: "以下哪项不是艾伦·图灵的誉称？",
-        firstOption: "计算机之父",
+        firstOption: "计算机科学之父",
         secondOption: "人工智能之父",
         thirdOption: "电脑之父",
         fourthOption: "编程之父",
