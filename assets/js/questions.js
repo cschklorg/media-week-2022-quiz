@@ -38,11 +38,11 @@ var questionArr = [
     {
         // questionNumber: "5",
         question: "第一个微处理器是由什么公司是生产？",
-        firstOption: "Intel",
+        firstOption: "Apple",
         secondOption: "AMD",
-        thirdOption: "Apple",
+        thirdOption: "Intel",
         fourthOption: "Nvidia",
-        correctAnswer: "#first-option"
+        correctAnswer: "#third-option"
     },
     {
         // questionNumber: "6",
@@ -65,11 +65,11 @@ var questionArr = [
     {
         // questionNumber: "8",
         question: "以下哪项不是照片编辑软件？",
-        firstOption: "Adobe Photoshop",
-        secondOption: "Adobe Illustrator",
+        firstOption: "GIMP",
+        secondOption: "Adobe Photoshop",
         thirdOption: "Adobe Lightroom",
-        fourthOption: "GIMP",
-        correctAnswer: "#second-option"
+        fourthOption: "Adobe Illustrator",
+        correctAnswer: "#fourth-option"
     },
     {
         // questionNumber: "9",
