@@ -256,15 +256,19 @@ input:focus {
     font-weight: bold;
     font-size: 23px;
     background: transparent;
-    border: 0px solid rgb(242, 181, 28);
+    border: 3px solid rgb(242, 181, 28);
+    /* border: 0px solid rgb(242, 181, 28); */
     height: 50px;
     width: 230px;
-    position:absolute;
-    bottom:0;
+    margin-right: 0px;;
+    /* position:absolute;*/
+    /* bottom: 0;*/
 }
 
 #retake:hover {
-    background: transparent;
+    color: white;
+    background: rgb(242, 181, 28);
+    /* background: transparent;*/
     transition-duration: 0.3s;
 }
 
