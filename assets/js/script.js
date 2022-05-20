@@ -143,13 +143,13 @@ function scoreIncrement(event) {
         if (questionNumber == 1 && event.target.matches(startQuestion.correctAnswer) === true) {
             userScore++;
 
-            event.target.setAttribute("style", "border: 2px solid rgb(116, 222, 116)");
+            event.target.setAttribute("style", "border: 2px solid rgb(0, 0, 0)");
         } else if (questionNumber == 1 && event.target.matches(startQuestion.correctAnswer) === false){
             timeLeft -= 0;
 
-            event.target.setAttribute("style", "border: 2px solid rgb(218, 72, 72)");
+            event.target.setAttribute("style", "border: 2px solid rgb(0, 0, 0)");
             var correctBtn = document.querySelector(startQuestion.correctAnswer);
-            correctBtn.setAttribute("style", "border: 2px solid rgb(116, 222, 116)");
+            correctBtn.setAttribute("style", "border: 2px solid rgb(251, 251, 251)");
 
             countdownEl.setAttribute("style", "color: rgb(0, 0, 0)"); 
             setTimeout(function() {
@@ -158,13 +158,13 @@ function scoreIncrement(event) {
         } else if (event.target.matches(currentQuestion.correctAnswer) === true) {
             userScore++;
     
-            event.target.setAttribute("style", "border: 2px solid rgb(116, 222, 116)");
+            event.target.setAttribute("style", "border: 2px solid rgb(0, 0, 0)");
         } else {
             timeLeft -= 0;
 
-            event.target.setAttribute("style", "border: 2px solid rgb(218, 72, 72)");
+            event.target.setAttribute("style", "border: 2px solid rgb(0, 0, 0)");
             var correctBtn = document.querySelector(currentQuestion.correctAnswer);
-            correctBtn.setAttribute("style", "border: 2px solid rgb(116, 222, 116)");
+            correctBtn.setAttribute("style", "border: 2px solid rgb(251, 251, 251)");
 
             countdownEl.setAttribute("style", "color: rgb(0, 0, 0)"); 
             setTimeout(function() {
