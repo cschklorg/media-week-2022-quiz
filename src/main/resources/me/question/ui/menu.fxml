@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="870.0" prefWidth="1550.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.question.ui.Menu">
+
+    <Button fx:id="startButton" layoutX="656.0" layoutY="568.0" onAction="#onAction" prefHeight="126.0" prefWidth="238.0" style="-fx-border-color: #90EE90; -fx-border-width: 5; -fx-background-color: #e0ffff;" text="Start">
+        <font>
+            <Font name="System Bold" size="30.0" />
+        </font>
+    </Button>
+   <Text fontSmoothingType="LCD" layoutX="564.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="精彩Quiz题" textAlignment="CENTER">
+      <font>
+         <Font name="Calibri Bold" size="96.0" />
+      </font>
+   </Text>
+   <Text layoutX="497.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test your knowledge on a variety of topics!" wrappingWidth="820.2785949707031">
+      <font>
+         <Font name="System Bold" size="27.0" />
+      </font>
+   </Text>
+   <Text layoutX="427.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Try to answer all 10 questions within 3 minutes." textAlignment="RIGHT" wrappingWidth="696.4426574707031">
+      <font>
+         <Font size="31.0" />
+      </font>
+   </Text>
+   <Text layoutX="410.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Try not to spend too much time on each question." textAlignment="CENTER">
+      <font>
+         <Font size="36.0" />
+      </font>
+   </Text>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GOLD" height="142.0" stroke="BLACK" strokeType="INSIDE" width="1550.0" />
+   <Text fontSmoothingType="LCD" layoutX="1206.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time left: ">
+      <font>
+         <Font name="Comic Sans MS Bold Italic" size="41.0" />
+      </font>
+   </Text>
+   <ProgressBar layoutX="195.0" layoutY="70.0" prefHeight="36.0" prefWidth="257.0" progress="0.0" />
+   <Text layoutX="193.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Answered">
+      <font>
+         <Font name="Consolas" size="28.0" />
+      </font>
+   </Text>
+   <Text layoutX="162.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font>
+   </Text>
+   <Text layoutX="462.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font>
+   </Text>
+   <Text layoutX="1422.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="180">
+      <font>
+         <Font name="System Bold Italic" size="35.0" />
+      </font>
+   </Text>
+</AnchorPane>
