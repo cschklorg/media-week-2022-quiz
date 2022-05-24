@@ -8,6 +8,7 @@ import javafx.scene.control.Button
 import javafx.scene.control.ProgressBar
 import javafx.scene.text.Text
 import me.question.ui.runnable.QuestionUI
+import me.question.ui.util.RandomUtil
 
 class Question {
     @FXML
@@ -37,6 +38,9 @@ class Question {
 
         @JvmStatic
         var first: Boolean = true
+
+        @JvmStatic
+        val currentStage: Int = 0
     }
 
     private fun onTick() {
@@ -74,36 +78,55 @@ class Question {
         }
          */
         if (!first) {
-            qui.stage++
+            if (qui.questionMap != null && !qui.questionMap.contains(qui.stage)) {
+                qui.stage = RandomUtil.nextInt(1, 15)
+                //qui.stage++
+            }
             qui.questionCount++
         }
-        questionText!!.text = qui.question
-        if (questionText!!.text.contains("以下哪个不是社交媒体")) {
-            questionText!!.layoutX = questionText!!.text.length / 2.0
-        } else {
-            questionText!!.layoutX = questionText!!.text.length / 1.5
-        }
-        ques1!!.text = qui.answer1
-        ques2!!.text = qui.answer2
-        ques3!!.text = qui.answer3
-        ques4!!.text = qui.answer4
+        if (qui.questionMap.size <= 10) {
+            questionText!!.text = qui.question
 
-        try {
-            val task: Task<Void?> = object : Task<Void?>() {
-                override fun call(): Void? {
-                    try {
-                        for (i in 0 until qui.stage) {
-                            updateProgress(i.toLong(), qui.stage.toLong())
-                            Thread.sleep(10)
-                        }
-                    } catch (ignored: Exception) {
-                    }
-                    return null
-                }
+            if (questionText!!.text.contains("以下哪个不是社交媒体")) {
+                questionText!!.layoutX = questionText!!.text.length / 2.0
+            } else {
+                questionText!!.layoutX = questionText!!.text.length / 1.5
             }
-            progressBar!!.progressProperty().unbind()
-            progressBar!!.progressProperty().bind(task.progressProperty())
-        } catch (ignored: Exception) {
+            ques1!!.text = qui.answer1
+            ques2!!.text = qui.answer2
+            ques3!!.text = qui.answer3
+            ques4!!.text = qui.answer4
+
+            if (event.source.equals(ques1)
+                || event.source.equals(ques2)
+                || event.source.equals(ques3)
+                || event.source.equals(ques4)
+            ) {
+                /*
+                if (!qui.questionMap.contains(qui.stage)) {
+                    qui.questionMap[qui.stage] = event.source
+                }
+
+                 */
+            }
+
+            try {
+                val task: Task<Void?> = object : Task<Void?>() {
+                    override fun call(): Void? {
+                        try {
+                            for (i in 0 until qui.stage) {
+                                updateProgress(i.toLong(), qui.stage.toLong())
+                                Thread.sleep(10)
+                            }
+                        } catch (ignored: Exception) {
+                        }
+                        return null
+                    }
+                }
+                progressBar!!.progressProperty().unbind()
+                progressBar!!.progressProperty().bind(task.progressProperty())
+            } catch (ignored: Exception) {
+            }
         }
     }
 }

@@ -22,10 +22,6 @@ public class MainMenu extends Application {
     public static Question ques = new Question();
     public static QuestionUI qui = new QuestionUI();
 
-    //FX
-    @FXML
-    public static Text time;
-
     public static void timerCountDown() {
         timeSec--;
     }
