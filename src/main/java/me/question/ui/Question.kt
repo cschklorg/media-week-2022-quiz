@@ -40,7 +40,7 @@ class Question {
         var first: Boolean = true
 
         @JvmStatic
-        val currentStage: Int = 0
+        var currentStage: Int = 0
     }
 
     private fun onTick() {
@@ -72,19 +72,21 @@ class Question {
 
     @FXML
     fun onAction(event: ActionEvent) {
-        /*
-        if (qui.stage == 1) {
-            ques1!!.text = qui.answer1
-        }
-         */
-        if (!first) {
-            if (qui.questionMap != null && !qui.questionMap.contains(qui.stage)) {
-                qui.stage = RandomUtil.nextInt(1, 15)
-                //qui.stage++
-            }
-            qui.questionCount++
-        }
+        //TODO 给予每一个题目一个专属的ID
         if (qui.questionMap.size <= 10) {
+            if (!first) {
+                qui.stage = RandomUtil.nextInt(1, 15)
+                currentStage = qui.stage
+                if (qui.questionMap != null && qui.questionMap.contains(currentStage)) {
+                    //qui.stage++
+                    qui.stage = RandomUtil.nextInt(1, 15)
+                    currentStage = qui.stage
+                }
+                if (!qui.questionMap.contains(currentStage)) {
+                    qui.questionCount++
+                }
+            }
+
             questionText!!.text = qui.question
 
             if (questionText!!.text.contains("以下哪个不是社交媒体")) {
@@ -102,12 +104,7 @@ class Question {
                 || event.source.equals(ques3)
                 || event.source.equals(ques4)
             ) {
-                /*
-                if (!qui.questionMap.contains(qui.stage)) {
-                    qui.questionMap[qui.stage] = event.source
-                }
-
-                 */
+                qui.questionMap[qui.stage] = event.source
             }
 
             try {
@@ -115,7 +112,7 @@ class Question {
                     override fun call(): Void? {
                         try {
                             for (i in 0 until qui.stage) {
-                                updateProgress(i.toLong(), qui.stage.toLong())
+                                updateProgress(i.toDouble(), currentStage.toDouble())
                                 Thread.sleep(10)
                             }
                         } catch (ignored: Exception) {
@@ -127,6 +124,8 @@ class Question {
                 progressBar!!.progressProperty().bind(task.progressProperty())
             } catch (ignored: Exception) {
             }
+        } else {
+            //
         }
     }
 }
