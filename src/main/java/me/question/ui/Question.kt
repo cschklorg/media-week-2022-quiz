@@ -72,17 +72,19 @@ class Question {
 
     @FXML
     fun onAction(event: ActionEvent) {
-        //TODO 给予每一个题目一个专属的ID
-        if (qui.questionMap.size <= 10) {
+        if (qui.questionCount <= 10) {
             if (!first) {
                 qui.stage = RandomUtil.nextInt(1, 15)
                 currentStage = qui.stage
-                if (qui.questionMap != null && qui.questionMap.contains(currentStage)) {
+                /*
+                if (qui.questionMap != null && qui.questionMap.contains(qui.questionID)) {
                     //qui.stage++
                     qui.stage = RandomUtil.nextInt(1, 15)
                     currentStage = qui.stage
                 }
-                if (!qui.questionMap.contains(currentStage)) {
+
+                 */
+                if (!qui.questionMap.contains(qui.questionID)) {
                     qui.questionCount++
                 }
             }
@@ -104,7 +106,7 @@ class Question {
                 || event.source.equals(ques3)
                 || event.source.equals(ques4)
             ) {
-                qui.questionMap[qui.stage] = event.source
+                qui.questionMap[qui.questionID] = event.source
             }
 
             try {
@@ -125,7 +127,7 @@ class Question {
             } catch (ignored: Exception) {
             }
         } else {
-            //
+            //exitProcess(0)
         }
     }
 }
