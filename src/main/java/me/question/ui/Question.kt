@@ -32,6 +32,9 @@ class Question {
     @FXML
     var progressBar: ProgressBar? = null
 
+    @FXML
+    var quesAns: Text? = null
+
     companion object {
         @JvmStatic
         var qui: QuestionUI = QuestionUI()
