@@ -13,7 +13,7 @@
         </font>
     </Text>
     <ProgressBar fx:id="progressBar" layoutX="195.0" layoutY="70.0" prefHeight="36.0" prefWidth="257.0" progress="0.0" />
-    <Text layoutX="193.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Answered">
+    <Text layoutX="193.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Correct">
         <font>
             <Font name="Consolas" size="28.0" />
         </font>

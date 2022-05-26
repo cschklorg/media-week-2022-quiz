@@ -21,6 +21,19 @@ public class RandomUtil {
         return sb.toString();
     }
 
+    public static int nextInt(int startInclusive, int endExclusive, int same) {
+        int a = endExclusive - startInclusive <= 0 ? startInclusive : startInclusive + new Random().nextInt(endExclusive - startInclusive);
+        if (a == same) {
+            if (a + 1 <= same) {
+                return ++a;
+            } else {
+                return --a;
+            }
+        } else {
+            return a;
+        }
+    }
+
     public static int nextInt(int startInclusive, int endExclusive) {
         return endExclusive - startInclusive <= 0 ? startInclusive : startInclusive + new Random().nextInt(endExclusive - startInclusive);
     }

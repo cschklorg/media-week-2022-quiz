@@ -44,6 +44,9 @@ class Question {
 
         @JvmStatic
         var currentStage: Int = 0
+
+        @JvmStatic
+        var correct: Int = 0
     }
 
     private fun onTick() {
@@ -89,6 +92,10 @@ class Question {
                  */
                 if (!qui.questionMap.contains(qui.questionID)) {
                     qui.questionCount++
+                } else {
+                    //qui.stageList.forEach { qui.stage = RandomUtil.nextInt(1, 15, it) }
+                    qui.stage = RandomUtil.nextInt(1, 15, qui.stage)
+                    currentStage = qui.stage
                 }
             }
 
@@ -109,7 +116,12 @@ class Question {
                 || event.source.equals(ques3)
                 || event.source.equals(ques4)
             ) {
-                qui.questionMap[qui.questionID] = event.source
+                //qui.questionMap[qui.questionID] = event.source
+                if (event.source is Button) {
+                    if ((event.source as Button).text.equals(qui.correctAns))
+                    correct++
+                    quesAns!!.text = correct.toString()
+                }
             }
 
             try {
@@ -130,6 +142,15 @@ class Question {
             } catch (ignored: Exception) {
             }
         } else {
+            /*
+            qui.questionMap.forEach {
+                if (it.component2().equals(qui.correctAns)) {
+                    correct++
+                    println(correct)
+                }
+            }
+            */
+            //println(correct)
             //exitProcess(0)
         }
     }
